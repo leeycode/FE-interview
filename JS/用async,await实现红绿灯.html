@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用async,await实现红绿灯</title>
+    <style>
+        div {
+            width: 50px;
+            height: 50px;
+            background-color: aliceblue;
+            border-radius: 50%;
+            float: left;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<script>
+var aDiv = document.querySelectorAll('div');
+    function active(index,oColor){
+    for(var i = 0;i<aDiv.length;i++){
+        aDiv[i].style.background = '';
+    } 
+    aDiv[index].style.background = oColor;
+}
+
+
+
+var fn = async function(){
+var p1 = await new Promise(function(success,error){
+setTimeout(()=>{
+success(active(0,'red'));
+},1000)
+});
+var p2 = await new Promise(function(success,error){
+setTimeout(()=>{
+success(active(1,'green'));
+},1000)
+});
+var p3 = await new Promise(function(success,error){
+setTimeout(()=>{
+success(active(2,'yellow'));
+},1000)
+});
+fn();
+}
+fn();
+
+</script>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>
