@@ -33,25 +33,3 @@
 5. 文档中明确指出**永远不要把 `v-if` 和 `v-for` 同时用在同一个元素上**，显然这是一个重要的注意事项。
 
 6. 看过源码里面关于代码生成的部分，
-
-
-
-
-
-知其所以然：
-
-做个测试，[01.html](./01.html)
-两者同级时，渲染函数如下：
-
-
-```js
-ƒ anonymous(
-) {
-with(this){return _c('div',{attrs:{"id":"app"}},_l((items),function(item){return (item.isActive)?_c('div',{key:item.id},[_v("\n      "+_s(item.name)+"\n    ")]):_e()}),0)}
-}
-```
-
-
-
-源码中找答案compiler/codegen/index.js 
-
