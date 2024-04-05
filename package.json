@@ -8,13 +8,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/57code/vue-interview.git"
+    "url": "git+https://github.com/leeycode/vue-interview.git"
   },
-  "keywords": ["vue", "interview"],
-  "author": "57code",
+  "keywords": [
+    "vue",
+    "interview"
+  ],
+  "author": "leeycode",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/57code/vue-interview/issues"
   },
-  "homepage": "https://57code.github.io/vue-interview"
+  "homepage": "https://57code.github.io/vue-interview",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
 }

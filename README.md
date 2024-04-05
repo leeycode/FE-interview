@@ -18,3 +18,14 @@
 12. [nextTick 实现原理](vue/12/README.md)
 13. [Vue2 和 Vue3 中的响应式原理对比，分别的具体实现思路](vue/13/README.md)
 14. [new Vue()都做了什么？](vue/14/README.md)
+
+
+# 运行
+
+全局安装http-server
+```
+ npm i http-server -g
+
+ http-server -p 8001 
+
+ ```
