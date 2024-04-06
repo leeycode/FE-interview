@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="class.js"></script> -->
+    <script src="extends.js"></script>
+    <script src="jquery-demo.js"></script>
+</head>
+<body>
+    <p>原型和原型链</p>
+    <p>段落1</p>
+    <p>段落2</p>
+    <p>段落3</p>
+    <p>段落4</p>
+    <script>
+            $p = new jQuery("p")
+            $p.get(1)
+            $p.each(e => console.log(e))
+            $p.on('click',()=>console.log('click'))
+    </script>
+</body>
+</html>
