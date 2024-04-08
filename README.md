@@ -21,6 +21,8 @@
 
 ## ES-interview
 1. [手写深拷贝](JS/01/README.md)
+2. [原型和原型链](JS/02/README.md)
+3. [作用域和闭包](JS/03/README.md)
 
 
 # 运行
